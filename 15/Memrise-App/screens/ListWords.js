@@ -5,6 +5,7 @@ import Word from "../components/Word";
 import { Button } from "react-native-elements";
 
 import sample from "../Data";
+import { ROUTES } from "../constants/routes";
 // const AppContainer = createAppContainer(AppNavigator);
 
 const screenWidth = Math.round(Dimensions.get("window").width);
@@ -18,7 +19,10 @@ export default function ListWord({ navigation }) {
       <FlatList
         data={sample.listWordData}
         renderItem={({ item }) => (
-          <Word unit={item} onPress={() => navigation.navigate("WordDetail")} />
+          <Word
+            unit={item}
+            onPress={() => navigation.navigate(ROUTES.WordDetail)}
+          />
         )}
         keyExtractor={(item) => `${item.id}`}
         scrollEnabled={true}
@@ -28,9 +32,8 @@ export default function ListWord({ navigation }) {
       <View style={styles.footer}>
         <Text
           style={styles.review}
-          onPress={() => navigation.navigate("Review")}
+          onPress={() => navigation.navigate(ROUTES.Review)}
         >
-         
           Review now !!!
         </Text>
       </View>
