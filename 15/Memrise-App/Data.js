@@ -39,17 +39,17 @@ const listWordData= [
     { id:38 , word:'英語' ,mean:'Tiếng Anh' , miss:false , level:1 },
     { id:39 , word:'映画' ,mean:'Phim' , miss:false , level:1 },
     { id:40 , word:'日本語' ,mean:'Tiếng Nhật' , miss:false , level:1 },
-    { id:41 , word:'' ,mean:'' , miss:false , level: },
-    { id:42 , word:'' ,mean:'' , miss:false , level: },
-    { id:43 , word:'' ,mean:'' , miss:false , level: },
-    { id:44 , word:'' ,mean:'' , miss:false , level: },
-    { id:45 , word:'' ,mean:'' , miss:false , level: },
-    { id:46 , word:'' ,mean:'' , miss:false , level: },
-    { id:47 , word:'' ,mean:'' , miss:false , level: },
-    { id:48 , word:'' ,mean:'' , miss:false , level: },
-    { id:49 , word:'' ,mean:'' , miss:false , level: },
-    { id:50 , word:'' ,mean:'' , miss:false , level: },
-    { id:51 , word:'' ,mean:'' , miss:false , level: }
+    { id:41 , word:'新聞' ,mean:'Báo' , miss:false , level:1 },
+    { id:42 , word:'教室' ,mean:'Lớp học, phòng học' , miss:false , level:2 },
+    { id:43 , word:'食堂' ,mean:'Nhà ăn' , miss:false , level:1 },
+    { id:44 , word:'事務所' ,mean:'Văn phòng' , miss:false , level:2 },
+    { id:45 , word:'会議室' ,mean:'Phòng họp' , miss:false , level:1 },
+    { id:46 , word:'受付' ,mean:'Bộ phận tiếp tân' , miss:false , level:3 },
+    { id:47 , word:'部屋' ,mean:'Căn phòng' , miss:false , level:0 },
+    { id:48 , word:'階段' ,mean:'Cầu thang' , miss:false , level:1 },
+    { id:49 , word:'会社' ,mean:'Công ty' , miss:false , level:1 },
+    { id:50 , word:'お国' ,mean:'Đất nước' , miss:false , level:0 },
+    { id:51 , word:'電話' ,mean:'Điện thoại' , miss:false , level:1 }
 ];
 
 
