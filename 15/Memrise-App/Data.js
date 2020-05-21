@@ -73,7 +73,32 @@ const listWordData= [
     { id:72 , word:'美術館' , hira: 'びじゅつかん' ,mean:'Bảo tàng mỹ thuật' , miss:false , level:2 },
     { id:73 , word:'今' , hira: 'いま' ,mean:'Bây giờ' , miss:false , level:1 },
     { id:74 , word:'半' , hira: 'はん' ,mean:'Một nửa' , miss:false , level:1 },
-    { id:75 , word:'午前' , hira: 'ごぜん' ,mean:'Trước 12 giờ trưa, sáng' , miss:false , level:1 }
+    { id:75 , word:'午前' , hira: 'ごぜん' ,mean:'Trước 12 giờ trưa, sáng' , miss:false , level:1 },
+    { id:76 , word:'午前' , hira: 'ごご' ,mean:'' , miss:false , level: },
+    { id:77 , word:'朝' , hira: 'あさ' ,mean:'' , miss:false , level: },
+    { id:78 , word:'昼' , hira: 'ひる' ,mean:'' , miss:false , level: },
+    { id:79 , word:'晩' , hira: 'ばん' ,mean:'' , miss:false , level: },
+    { id:80 , word:'夜' , hira: 'よる' ,mean:'' , miss:false , level: },
+    { id:81 , word:'今朝' , hira: 'けさ' ,mean:'' , miss:false , level: },
+    { id:82 , word:'今晩' , hira: 'こんばん' ,mean:'' , miss:false , level: },
+    { id:83 , word:'' , hira: '' ,mean:'' , miss:false , level: },
+    { id:84 , word:'' , hira: '' ,mean:'' , miss:false , level: },
+    { id:85 , word:'' , hira: '' ,mean:'' , miss:false , level: },
+    { id:86 , word:'' , hira: '' ,mean:'' , miss:false , level: },
+    { id:87 , word:'' , hira: '' ,mean:'' , miss:false , level: },
+    { id:88 , word:'' , hira: '' ,mean:'' , miss:false , level: },
+    { id:89 , word:'' , hira: '' ,mean:'' , miss:false , level: },
+    { id:90 , word:'' , hira: '' ,mean:'' , miss:false , level: },
+    { id:91 , word:'' , hira: '' ,mean:'' , miss:false , level: },
+    { id:92 , word:'' , hira: '' ,mean:'' , miss:false , level: },
+    { id:93 , word:'' , hira: '' ,mean:'' , miss:false , level: },
+    { id:94 , word:'' , hira: '' ,mean:'' , miss:false , level: },
+    { id:95 , word:'' , hira: '' ,mean:'' , miss:false , level: },
+    { id:96 , word:'' , hira: '' ,mean:'' , miss:false , level: },
+    { id:97 , word:'' , hira: '' ,mean:'' , miss:false , level: },
+    { id:98 , word:'' , hira: '' ,mean:'' , miss:false , level: },
+    { id:99 , word:'' , hira: '' ,mean:'' , miss:false , level: },
+    { id:100 , word:'' , hira: '' ,mean:'' , miss:false , level: }
 ];
 
 
