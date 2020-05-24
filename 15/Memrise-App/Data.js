@@ -138,7 +138,32 @@ const listWordData= [
     { id:137 , word:'卵' , hira: 'たまご' ,mean:'Trứng' , miss:false , level:3 },
     { id:138 , word:'肉' , hira: 'にく' ,mean:'Thịt' , miss:false , level:3 },
     { id:139 , word:'魚' , hira: 'さかな' ,mean:'Cá' , miss:false , level:3 },
-    { id:140 , word:'水' , hira: 'みず' ,mean:'Nước' , miss:false , level:3 }
+    { id:140 , word:'水' , hira: 'みず' ,mean:'Nước' , miss:false , level:3 },
+    { id:141 , word:'お茶' , hira: 'おちゃ' ,mean:'Trà (nói chung)' , miss:false , level:2 },
+    { id:142 , word:'紅茶' , hira: 'こうちゃ' ,mean:'Trà đen' , miss:false , level:6 },
+    { id:143 , word:'牛乳' , hira: 'ぎゅうにゅう' ,mean:'Sữa bò' , miss:false , level:4 },
+    { id:144 , word:'お酒' , hira: 'おさけ' ,mean:'Rượu sake' , miss:false , level:2 },
+    { id:145 , word:'手紙' , hira: 'てがみ' ,mean:'Thư tay' , miss:false , level:3 },
+    { id:146 , word:'写真' , hira: 'しゃしん' ,mean:'Ảnh' , miss:false , level:4 },
+    { id:147 , word:'店' , hira: 'みせ' ,mean:'Cửa hàng, tiệm' , miss:false , level:3 },
+    { id:148 , word:'宿題' , hira: 'しゅくだい' ,mean:'Bài tập về nhà' , miss:false , level:5 },
+    { id:149 , word:'時々' , hira: 'ときどき' ,mean:'Thỉnh thoảng' , miss:false , level:6 },
+    { id:150 , word:'紙' , hira: 'かみ' ,mean:'Giấy' , miss:false , level:7 },
+    { id:151 , word:'花火' , hira: 'はなび' ,mean:'Pháo hoa' , miss:false , level:1 },
+    { id:152 , word:'荷物' , hira: 'にもつ' ,mean:'Đồ đạc, hành lý' , miss:false , level:2 },
+    { id:153 , word:'お金' , hira: 'おかね' ,mean:'Tiền' , miss:false , level:3 },
+    { id:154 , word:'切符' , hira: 'きっぷ' ,mean:'Vé' , miss:false , level:4 },
+    { id:155 , word:'お土産' , hira: 'おみやげ' ,mean:'Quà' , miss:false , level:5 },
+    { id:156 , word:'旅行' , hira: 'りょこう' ,mean:'Du lịch' , miss:false , level:6 },
+    { id:157 , word:'静かな' , hira: 'しずかな' ,mean:'Yên tĩnh' , miss:false , level:7 },
+    { id:158 , word:'有名な' , hira: 'ゆうめいな' ,mean:'Nổi tiếng' , miss:false , level:1 },
+    { id:159 , word:'親切な' , hira: 'しんせつな' ,mean:'Tốt bụng, thân thiện' , miss:false , level:2 },
+    { id:160 , word:'元気な' , hira: 'げんきな' ,mean:'Khỏe mạnh' , miss:false , level:3 },
+    { id:161 , word:'暇な' , hira: 'ひまな' ,mean:'Rảnh rỗi' , miss:false , level:4 },
+    { id:162 , word:'便利な' , hira: 'べんりな' ,mean:'Tiện lợi' , miss:false , level:5 },
+    { id:163 , word:'大きい' , hira: 'おおきい' ,mean:'Lớn, to' , miss:false , level:6 },
+    { id:164 , word:'小さい' , hira: 'ちいさい' ,mean:'Nhỏ, bé' , miss:false , level:7 },
+    { id:165 , word:'新しい' , hira: 'あたらしい' ,mean:'Mới' , miss:false , level:1 }
 ];
 
 
