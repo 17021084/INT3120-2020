@@ -17,24 +17,17 @@ const boxBackGroundColor = {
 };
 
 export default function ReviewWord(props) {
-  const { wordObj, onPress , check } = props;
-  const [color , setColor ]= useState( boxBackGroundColor[check].toString() );
+  const { wordObj, onPress, check } = props;
+  const [color, setColor] = useState(boxBackGroundColor[check].toString());
   // console.log('check va color ' ,check , color)ß
-  useEffect(()=>{
-    setColor(boxBackGroundColor[check].toString())
-    console.log('check va color ' ,check , color)
-
-  })
+  useEffect(() => {
+    setColor(boxBackGroundColor[check].toString());
+    console.log("check va color ", check, color);
+  });
   return (
     <TouchableOpacity activeOpacity={0.5} onPress={() => onPress(wordObj)}>
-      <View
-        style={[
-          styles.WordBox,
-          { backgroundColor: color},
- 
-        ]}
-      >
-        <Text  style={{fontSize:20}}>{wordObj.mean } </Text>
+      <View style={[styles.WordBox, { backgroundColor: color }]}>
+        <Text style={{ fontSize: 20 }}>{wordObj.mean} </Text>
       </View>
     </TouchableOpacity>
   );
@@ -53,7 +46,5 @@ const styles = StyleSheet.create({
     borderColor: "black",
     shadowColor: "black",
     shadowOpacity: 0.3,
-    
   },
-
 });

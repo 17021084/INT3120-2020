@@ -7,15 +7,14 @@ import thunder from "../assets/thunder.png";
 import wateringCan from "../assets/watering-can.png";
 
 export default function WordContainer(props) {
-  const { word, mean,level } = props.objWord;
-  const hideMean =props.hideMean;
+  const { word, mean, level } = props.objWord;
+  const hideMean = props.hideMean;
   return (
     <View style={styles.WordContainer}>
       <View style={styles.WordInfor}>
         <Text style={styles.Word}>{word}</Text>
 
-        {hideMean||<Text style={styles.Mean}>{mean}</Text>}
-
+        {hideMean || <Text style={styles.Mean}>{mean}</Text>}
       </View>
 
       <View>

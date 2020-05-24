@@ -13,7 +13,7 @@ import Word from "../components/Word";
 import WordContainer from "../components/WordContainer";
 
 import sample from "../Data";
-
+import { ROUTES } from "../constants/routes";
 
 export default function listWord({ navigation, route }) {
   // React.useEffect(() => {
@@ -24,14 +24,13 @@ export default function listWord({ navigation, route }) {
   // }, [route.params?.post]);
   return (
     <View style={styles.container}>
-
       <WordContainer objWord={sample.listWordData[1]} hideMean={false} />
 
       <View style={styles.Mem}>
         <Button
           title="Create a new Mems"
           onPress={() => {
-            navigation.navigate("AddMem");
+            navigation.navigate(ROUTES.AddMem);
           }}
         />
 

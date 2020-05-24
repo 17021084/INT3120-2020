@@ -48,11 +48,10 @@ export default function Review({ navigation, route }) {
   // van de la ko check ko thay doi
 
   function handleOnPress(objWord) {
-    
     const index = testData.indexOf(objWord);
     if (index == -1) return;
     console.log(index);
-    var box = [...check.slice(0,index) , 'correct',...check.slice(index+1 ) ];
+    var box = [...check.slice(0, index), "correct", ...check.slice(index + 1)];
     setCheck(box);
     console.log(check[index]);
     // =/======
@@ -63,8 +62,6 @@ export default function Review({ navigation, route }) {
     // box.splice(index, 1, "correct");
     // setCheck(box);
     // console.log(check[index]);
-    
-
   }
 
   const _renderItem = ({ item, index }) => {
@@ -74,12 +71,9 @@ export default function Review({ navigation, route }) {
     );
   };
 
-  
-
   return (
     <View style={styles.container}>
       <WordContainer objWord={testData[2]} hideMean={true} />
-  
 
       <FlatList
         data={testData}
