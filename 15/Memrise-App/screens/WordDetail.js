@@ -27,7 +27,7 @@ export default function listWord({ navigation, route }) {
 
       <View style={styles.Mem}>
         <Button
-          title="Create a new Mems"
+          title="Tạo ghi nhớ"
           onPress={() => {
             navigation.navigate("AddMem");
           }}
@@ -36,7 +36,12 @@ export default function listWord({ navigation, route }) {
         <View style={styles.MemText}>
           <Text>đăng luc =))</Text>
           <Text
-            style={{ paddingTop: 3, fontStyle: "italic", textAlign: "right" }}
+            style={{
+              paddingTop: 3,
+              fontStyle: "italic",
+              textAlign: "right",
+              fontWeight: "bold",
+            }}
           >
             {" "}
             - Nguyễn Văn A
@@ -46,7 +51,12 @@ export default function listWord({ navigation, route }) {
         <View style={styles.MemText}>
           <Text>{route.params?.post}</Text>
           <Text
-            style={{ paddingTop: 3, fontStyle: "italic", textAlign: "right" }}
+            style={{
+              paddingTop: 3,
+              fontStyle: "italic",
+              textAlign: "right",
+              fontWeight: "bold",
+            }}
           >
             {" "}
             - Nguyễn Văn A

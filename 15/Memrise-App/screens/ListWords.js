@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 import {
   StyleSheet,
@@ -10,9 +10,9 @@ import {
 } from "react-native";
 import Word from "../components/Word";
 
-import { Button } from "react-native-elements";
+import { Button, Icon } from "react-native-elements";
 
-import {listWordData} from "../Data";
+import { listWordData } from "../Data";
 
 const screenWidth = Math.round(Dimensions.get("window").width);
 const screenHeight = Math.round(Dimensions.get("window").height);
@@ -21,25 +21,22 @@ export default function ListWord({ navigation }) {
   const [list, setList] = useState(listWordData);
   const [searchValue, setSearchValue] = useState();
 
-  useEffect(()=>{
+  useEffect(() => {
     // setSearchValue(searchValue)
-    // full text search owr day 
-    
-  },[searchValue])
+    // full text search owr day
+  }, [searchValue]);
 
-  function onChangeText(text){
+  function onChangeText(text) {
     text = text.toLocaleLowerCase().trim();
-    if (text ==''){
-
+    if (text == "") {
       setList(listWordData);
       return;
-    } 
+    }
 
-    let newList =list.filter( ls => {
-       ls.mean == text || ls.word == text
-    } );
+    let newList = list.filter((ls) => {
+      ls.mean == text || ls.word == text;
+    });
     setList(newList);
-
   }
   return (
     <View style={styles.container}>
@@ -48,11 +45,13 @@ export default function ListWord({ navigation }) {
           height: 40,
           borderColor: "gray",
           borderWidth: 1,
-          marginBottom: 30,
+          marginBottom: 20,
+          marginTop: 20,
         }}
-         onChangeText={text => onChangeText(text)}
-         value={searchValue}
+        onChangeText={(text) => onChangeText(text)}
+        value={searchValue}
       />
+
       <FlatList
         data={list}
         renderItem={({ item }) => (
