@@ -50,8 +50,8 @@ const styles = StyleSheet.create({
     borderColor: "black",
     shadowColor: "black",
     shadowOpacity: 0.3,
-    marginLeft: screen(5),
-    marginBottom: screen(4)
+    marginLeft: screen(3),
+    marginBottom: screen(4),
   },
 
 });

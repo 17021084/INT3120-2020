@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
   footer: {
     position: "absolute",
     bottom: screen(0),
-    height: 70,
+    height: screen(23),
     width: screen(100),
     justifyContent: "center",
     alignItems: "center",

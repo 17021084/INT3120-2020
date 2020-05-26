@@ -202,7 +202,6 @@ const styles = StyleSheet.create({
     
   },
   MemText: {
-    
     borderBottomWidth: 0.2,
     // borderStyle:'solid',
   },
