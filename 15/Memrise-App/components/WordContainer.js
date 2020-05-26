@@ -1,10 +1,13 @@
 import React from "react";
-import { Text, Image, View, StyleSheet } from "react-native";
+import { Text, Image, View, StyleSheet, Dimensions } from "react-native";
 
 import TreeImages from "../TreeImages";
 import planet from "../assets/planet.png";
 import thunder from "../assets/thunder.png";
 import wateringCan from "../assets/watering-can.png";
+
+const deviceWidth = Dimensions.get('window').width;
+const screen = (percent) => percent * deviceWidth/100;
 
 export default function WordContainer(props) {
   const { word, mean,level } = props.objWord;
@@ -34,8 +37,9 @@ const styles = StyleSheet.create({
   WordContainer: {
     flexDirection: "row",
     alignItems: "flex-start",
-    padding: 30,
-    marginBottom: 30,
+    paddingTop: screen(5),
+    paddingLeft: screen(7),
+    paddingBottom: screen(4.5)
   },
   WordInfor: {
     flexDirection: "column",
@@ -46,12 +50,13 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   WordImage: {
-    width: 65,
-    height: 65,
+    width: screen(25),
+    height: screen(25),
     backgroundColor: "green",
     // borderStyle: "solid",
     borderWidth: 0.5,
     borderRadius: 80,
+    marginRight: screen(7)
   },
   ThunderImage: {
     marginTop: 20,
@@ -68,13 +73,13 @@ const styles = StyleSheet.create({
   Word: {
     textTransform: "lowercase",
     fontWeight: "700",
-    fontSize: 50,
-    marginBottom: 20,
+    fontSize: screen(10),
+    paddingTop: screen(3)
   },
   Mean: {
     textTransform: "lowercase",
     fontWeight: "500",
     color: "#030",
-    fontSize: 30,
+    fontSize: screen(9),
   },
 });
