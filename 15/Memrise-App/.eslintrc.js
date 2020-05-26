@@ -1,4 +1,4 @@
-module.exports = {
+/* module.exports = {
     "env": {
         "browser": true,
         "es6": true
@@ -22,4 +22,21 @@ module.exports = {
     ],
     "rules": {
     }
-};
+}; */
+
+module.exports = {
+  'extends': 'airbnb',
+  'parser': 'babel-eslint',
+  'env': {
+    'jest': true,
+  },
+  'rules': {
+    'no-use-before-define': 'off',
+    'react/jsx-filename-extension': 'off',
+    'react/prop-types': 'off',
+    'comma-dangle': 'off'
+  },
+  'globals': {
+    "fetch": false
+  }
+}
