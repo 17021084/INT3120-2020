@@ -14,7 +14,6 @@ import WordContainer from "../components/WordContainer";
 
 import sample from "../Data";
 
-
 export default function listWord({ navigation, route }) {
   // React.useEffect(() => {
   //   if (route.params?.post) {
@@ -24,7 +23,6 @@ export default function listWord({ navigation, route }) {
   // }, [route.params?.post]);
   return (
     <View style={styles.container}>
-
       <WordContainer objWord={sample.listWordData[1]} hideMean={false} />
 
       <View style={styles.Mem}>
@@ -46,7 +44,7 @@ export default function listWord({ navigation, route }) {
         </View>
 
         <View style={styles.MemText}>
-          <Text>{route.params?.post}</Text>
+          {/* <Text>{route.params?.post}</Text> */}
           <Text
             style={{ paddingTop: 3, fontStyle: "italic", textAlign: "right" }}
           >

@@ -1,0 +1,79 @@
+{
+    "courses":[
+    {
+        "courseId":1,
+        "courseName":"人間",
+        "listWord": [
+       {  "mems":["viet nhu nay cho de nho"] ,      "id":1 , "word":"ありがとうございます" ,"mean":"cảm ơn " , "miss":false , "level":0 },
+       {  "mems":["viet nhu nay cho de nho"] ,      "id":2 , "word":"車" ,"mean":"xe hơi" , "miss":false , "level":0 },
+       {  "mems":["viet nhu nay cho de nho"] ,      "id":3 , "word":"野菜" ,"mean":"rau" , "miss":true , "level":1  },
+       {  "mems":["viet nhu nay cho de nho"] ,      "id":4 , "word":"指輪" ,"mean":"nhẫn" , "miss":true , "level":2  },
+       {  "mems":["viet nhu nay cho de nho"] ,      "id":5 , "word":"なべ" ,"mean":"nồi" , "miss":false , "level":3 },
+       {  "mems":["viet nhu nay cho de nho"] ,      "id":6 , "word":"果物" ,"mean":"hoa quả" , "miss":true , "level":4 },
+       {  "mems":["viet nhu nay cho de nho"] ,      "id":7 , "word":"ミカン" ,"mean":"quả quýt" , "miss":false , "level":5 }, 
+       {  "mems":["viet nhu nay cho de nho"] ,      "id":8 , "word":"家" ,"mean":"Nhà" , "miss":false , "level":0 }, 
+       {  "mems":["viet nhu nay cho de nho"] ,      "id":9 , "word":"家" ,"mean":"Gia tộc" , "miss":false , "level":0 },
+       {  "mems":["viet nhu nay cho de nho"] ,      "id":10 , "word":"漢字" ,"mean":"Hán tự" , "miss":false , "level":5 },
+       {  "mems":["viet nhu nay cho de nho"] ,      "id":11 , "word":"家庭" ,"mean":"Gia đình" , "miss":false , "level":0 },
+       {  "mems":["viet nhu nay cho de nho"] ,      "id":12 , "word":"経済" ,"mean":"kinh tế" , "miss":false , "level":4 },
+       {  "mems":["viet nhu nay cho de nho"] ,      "id":13 , "word":"庭" ,"mean":"Vườn" , "miss":false , "level":4 }
+    
+        ]
+
+    },
+    {
+        "courseId":2,
+        "courseName":"勉強",
+        "listWord": [
+        { "mems":["viet nhu nay cho de nho"] , "id":1 , "word":"医者" , "hira": "いしゃ" ,"mean":"Bác sĩ" , "miss":false , "level":1 },
+        { "mems":["viet nhu nay cho de nho"] , "id":2 , "word":"社員" , "hira": "しゃいん" ,"mean":"Nhân viên công ty" , "miss":false , "level":1 },
+        { "mems":["viet nhu nay cho de nho"] , "id":3 , "word":"教師" , "hira": "きょうし" ,"mean":"Giáo viên" , "miss":false , "level":1 },
+        { "mems":["viet nhu nay cho de nho"] , "id":4 , "word":"韓国" , "hira": "かんこく" ,"mean":"Hàn Quốc" , "miss":false , "level":1 },
+        { "mems":["viet nhu nay cho de nho"] , "id":5 , "word":"中国" , "hira": "ちゅうごく" ,"mean":"Trung Quốc" , "miss":false , "level":1 },
+        { "mems":["viet nhu nay cho de nho"] , "id":6 , "word":"ベトナム" , "hira": "べとなむ" ,"mean":"Việt Nam" , "miss":false , "level":3 },
+        { "mems":["viet nhu nay cho de nho"] , "id":7 , "word":"銀行" , "hira": "ぎんこう" ,"mean":"Ngân hàng" , "miss":false , "level":1 },
+        { "mems":["viet nhu nay cho de nho"] , "id":8 , "word":"本" , "hira": "ほん" ,"mean":"Sách" , "miss":false , "level":1 },
+        { "mems":["viet nhu nay cho de nho"] , "id":9 , "word":"鉛筆" , "hira": "えんぴつ" ,"mean":"Bút chì" , "miss":false , "level":4 },
+        { "mems":["viet nhu nay cho de nho"] , "id":10 , "word":"時計" , "hira": "とけい" ,"mean":"Đồng hồ" , "miss":false , "level":1 },
+        { "mems":["viet nhu nay cho de nho"] , "id":11 , "word":"傘" , "hira": "かさ" ,"mean":"Ô, dù" , "miss":false , "level":1 },
+        { "mems":["viet nhu nay cho de nho"] , "id":12 , "word":"自動車" , "hira": "じどうしゃ" ,"mean":"Xe hơi" , "miss":false , "level":1 },
+        { "mems":["viet nhu nay cho de nho"] , "id":13 , "word":"自転車" , "hira": "じてんしゃ" ,"mean":"Xe đạp" , "miss":false , "level":1 }
+    
+    
+    ]
+
+
+    },
+    {
+        "courseId":3,
+        "courseName":"人",
+        "listWord":[
+
+            {  "mems":["viet nhu nay cho de nho"] , "id":1 , "word":"新聞" , "hira": "しんぶん" ,"mean":"Báo" , "miss":false , "level":1 },
+            {  "mems":["viet nhu nay cho de nho"] , "id":2 , "word":"教室" , "hira": "きょうしつ" ,"mean":"Lớp học, phòng học" , "miss":false , "level":3 },
+            {  "mems":["viet nhu nay cho de nho"] , "id":3 , "word":"食堂" , "hira": "しょくどう" ,"mean":"Nhà ăn" , "miss":false , "level":1 },
+            {  "mems":["viet nhu nay cho de nho"] , "id":4 , "word":"事務所" , "hira": "じむしょ" ,"mean":"Văn phòng" , "miss":false , "level":3 },
+            {  "mems":["viet nhu nay cho de nho"] , "id":5 , "word":"会議室" , "hira": "かいぎしつ" ,"mean":"Phòng họp" , "miss":false , "level":1 },
+            {  "mems":["viet nhu nay cho de nho"] , "id":6 , "word":"受付" , "hira": "うけつけ" ,"mean":"Bộ phận tiếp tân" , "miss":false , "level":3 },
+            {  "mems":["viet nhu nay cho de nho"] , "id":7 , "word":"部屋" , "hira": "へや" ,"mean":"Căn phòng" , "miss":false , "level":1 },
+            {  "mems":["viet nhu nay cho de nho"] , "id":8 , "word":"階段" , "hira": "かいだん" ,"mean":"Cầu thang" , "miss":false , "level":1 },
+            {  "mems":["viet nhu nay cho de nho"] , "id":9 , "word":"会社" , "hira": "かいしゃ" ,"mean":"Công ty" , "miss":false , "level":1 },
+            {  "mems":["viet nhu nay cho de nho"] , "id":10 , "word":"お国" , "hira": "おくに" ,"mean":"Đất nước" , "miss":false , "level":3 },
+            {  "mems":["viet nhu nay cho de nho"] , "id":11 , "word":"電話" , "hira": "でんわ" ,"mean":"Điện thoại" , "miss":false , "level":3 },
+            {  "mems":["viet nhu nay cho de nho"] , "id":12 , "word":"靴" , "hira": "くつ" ,"mean":"Giầy" , "miss":false , "level":1 },
+            {  "mems":["viet nhu nay cho de nho"] , "id":13 , "word":"靴下" , "hira": "くつした" ,"mean":"Tất, bít tất" , "miss":false , "level":3 },
+            {  "mems":["viet nhu nay cho de nho"] , "id":14 , "word":"地下" , "hira": "ちか" ,"mean":"Tầng hầm, dưới mặt đất" , "miss":false , "level":1 },
+            {  "mems":["viet nhu nay cho de nho"] , "id":15 , "word":"百" , "hira": "ひゃく" ,"mean":"Trăm" , "miss":false , "level":1 },
+            {  "mems":["viet nhu nay cho de nho"] , "id":16 , "word":"千" , "hira": "せん" ,"mean":"Nghìn" , "miss":false , "level":1 },
+            {  "mems":["viet nhu nay cho de nho"] , "id":17 , "word":"万" , "hira": "まん" ,"mean":"Vạn, mười nghìn" , "miss":false , "level":1 },
+            {  "mems":["viet nhu nay cho de nho"] , "id":18 , "word":"眼鏡" , "hira": "めがね" ,"mean":"Kính mắt" , "miss":false , "level":7 },
+            {  "mems":["viet nhu nay cho de nho"] , "id":19 , "word":"服" , "hira": "ふく" ,"mean":"Quần áo" , "miss":false , "level":3 },
+            {  "mems":["viet nhu nay cho de nho"] , "id":20 , "word":"化粧品" , "hira": "けしょうひん" ,"mean":"Mỹ phẩm, đồ hóa trang" , "miss":false , "level":7 }
+        ]
+    }
+
+
+    ]
+    
+    
+}
