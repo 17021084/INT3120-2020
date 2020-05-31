@@ -70,6 +70,53 @@
             {  "mems":["viet nhu nay cho de nho"] , "id":19 , "word":"服" , "hira": "ふく" ,"mean":"Quần áo" , "miss":false , "level":3 },
             {  "mems":["viet nhu nay cho de nho"] , "id":20 , "word":"化粧品" , "hira": "けしょうひん" ,"mean":"Mỹ phẩm, đồ hóa trang" , "miss":false , "level":7 }
         ]
+    },
+
+    {
+        "courseId":4,
+        "courseName":"動物",
+        "listWord":[
+
+            {  "mems":["viet nhu nay cho de nho"] , "id":1 , "word":"新聞" , "hira": "しんぶん" ,"mean":"Báo" , "miss":false , "level":1 }
+            
+        ]
+    },
+    {
+        "courseId":5,
+        "courseName":"野菜",
+        "listWord":[
+
+            {  "mems":["viet nhu nay cho de nho"] , "id":1 , "word":"新聞" , "hira": "しんぶん" ,"mean":"Báo" , "miss":false , "level":1 }
+            
+        ]
+    },
+    {
+        "courseId":6,
+        "courseName":"植物",
+        "listWord":[
+
+            {  "mems":["viet nhu nay cho de nho"] , "id":1 , "word":"新聞" , "hira": "しんぶん" ,"mean":"Báo" , "miss":false , "level":1 }
+            
+        ]
+    },
+    {
+        "courseId":7,
+        "courseName":"家族",
+        "listWord":[
+
+            {  "mems":["viet nhu nay cho de nho"] , "id":1 , "word":"新聞" , "hira": "しんぶん" ,"mean":"Báo" , "miss":false , "level":1 }
+            
+        ]
+    },
+    
+    {
+        "courseId":8,
+        "courseName":"動物",
+        "listWord":[
+
+            {  "mems":["viet nhu nay cho de nho"] , "id":1 , "word":"新聞" , "hira": "しんぶん" ,"mean":"Báo" , "miss":false , "level":1 }
+            
+        ]
     }
 
 
