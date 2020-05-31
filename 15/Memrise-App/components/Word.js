@@ -12,17 +12,17 @@ import planet from '../assets/planet.png';
 import thunder from '../assets/thunder.png';
 import wateringCan from '../assets/watering-can.png';
 
-
-
-
 export default function Word (props){
     // const TreeImages = [tree0,tree1,tree2,tree3,tree4,tree5];
-    const { id ,word ,mean , miss , level } = props.unit;
+    const { wordId ,word ,mean , miss , level } = props.word;
+  
+    const {id} =props.id;
     const onPress = props.onPress;
+    
     return( 
         <TouchableOpacity 
             activeOpacity ={0.5}
-            onPress={onPress}
+            onPress={()=>onPress(wordId,id)}
         >
             <View style ={styles.container}>
                     <Image style={styles.wordImage} source = {TreeImages[level]} />
@@ -32,7 +32,9 @@ export default function Word (props){
                         <Text style={styles.mean} > {mean} </Text>
                     </View>
                             
-            {  miss&&<Image style={styles.thunderImage} source = {thunder} />}
+
+
+            {  miss&&<Image style={styles.thunderImage} source = {thunder}   />}
                    
                     
             </View>

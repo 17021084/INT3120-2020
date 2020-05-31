@@ -1,18 +1,10 @@
-import React from "react";
-import {
-  StyleSheet,
-  Text,
-  View,
-  Image,
-  Dimensions,
-  TextInput,
-  Button,
-  ViewComponent,
-} from "react-native";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import { StyleSheet, Text, View, Button } from "react-native";
+
 import Word from "../components/Word";
 import WordContainer from "../components/WordContainer";
-
-import sample from "../Data";
+import Spinner from "../components/Spinner";
 
 export default function listWord({ navigation, route }) {
   // React.useEffect(() => {
@@ -21,38 +13,118 @@ export default function listWord({ navigation, route }) {
   //     // For example, send the post to the server
   //   }
   // }, [route.params?.post]);
+
+  const [word, setWord] = useState({});
+  const [courseInfor, setCourseInfor] = useState({});
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const { wordId, id } = route.params;
+    const queryString = `http://localhost:3000/courses/${id}`;
+    axios
+      .get(queryString)
+      .then((res) => {
+        const { id, courseName, listWord } = res.data;
+
+        const newWord = listWord.filter((w) => w.wordId === wordId);
+
+        setWord(newWord[0]);
+
+        setIsLoading(false);
+
+        setCourseInfor({
+          listWord: listWord,
+          courseName: courseName,
+        });
+      })
+      .catch((err) => console.log(err));
+  }, []);
+
+  function handleOnThunderPress() {
+    console.log("handleOnThunderPress(); run");
+
+    const { wordId, id } = route.params;
+    const { listWord, courseName } = courseInfor;
+
+    // change miss
+    //============
+    let newWord = listWord.filter((wd) => wd.wordId === wordId)[0];
+    const index = listWord.indexOf(newWord);
+    const miss = newWord.miss;
+    newWord = {
+      ...newWord,
+      miss: !miss,
+    };
+    let newListWord = [
+      ...listWord.slice(0, index),
+      newWord,
+      ...listWord.slice(index + 1),
+    ];
+
+    const putData = {
+      courseName: courseName,
+      listWord: newListWord,
+    };
+    // ============
+
+    const queryString = `http://localhost:3000/courses/${id}`;
+    axios
+      .put(queryString,putData)
+      .then(res => console.log('success'))
+      .catch((error) => console.log(error));
+
+    return true;
+  }
+
   return (
     <View style={styles.container}>
-      <WordContainer objWord={sample.listWordData[1]} hideMean={false} />
+      {(isLoading && <Spinner />) || (
+        <View>
+          <WordContainer
+            objWord={word}
+            hideMean={false}
+            handleOnThunderPress={handleOnThunderPress}
+          />
 
-      <View style={styles.Mem}>
-        <Button
-          title="Create a new Mems"
-          onPress={() => {
-            navigation.navigate("AddMem");
-          }}
-        />
+          <View style={styles.Mem}>
+            <Button
+              title="Create a new Mems"
+              onPress={() => {
+                navigation.navigate("AddMem");
+              }}
+            />
 
-        <View style={styles.MemText}>
-          <Text>đăng luc =))</Text>
-          <Text
-            style={{ paddingTop: 3, fontStyle: "italic", textAlign: "right" }}
-          >
-            {" "}
-            - Nguyễn Văn A
-          </Text>
+            <View style={styles.MemText}>
+              <Text>đăng luc =))</Text>
+
+              <Text
+                style={{
+                  paddingTop: 3,
+                  fontStyle: "italic",
+                  textAlign: "right",
+                }}
+              >
+                {" "}
+                - Nguyễn Văn A
+              </Text>
+            </View>
+
+            <View style={styles.MemText}>
+              {/* <Text>{route.params?.post}</Text> */}
+              <Text
+                style={{
+                  paddingTop: 3,
+                  fontStyle: "italic",
+                  textAlign: "right",
+                }}
+              >
+                {" "}
+                - Nguyễn Văn A
+              </Text>
+            </View>
+          </View>
         </View>
-
-        <View style={styles.MemText}>
-          <Text>{route.params?.post}</Text>
-          <Text
-            style={{ paddingTop: 3, fontStyle: "italic", textAlign: "right" }}
-          >
-            {" "}
-            - Nguyễn Văn A
-          </Text>
-        </View>
-      </View>
+      )}
     </View>
   );
 }

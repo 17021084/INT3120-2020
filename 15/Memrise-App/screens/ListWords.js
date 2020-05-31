@@ -1,86 +1,110 @@
-import React, { useState,useEffect } from "react";
-
-import {
-  StyleSheet,
-  Text,
-  View,
-  FlatList,
-  Dimensions,
-  TextInput,
-} from "react-native";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import MiniSearch from "minisearch";
+import { StyleSheet, Text, View, FlatList, Dimensions } from "react-native";
 import Word from "../components/Word";
 
-import { Button } from "react-native-elements";
+import { SearchBar } from "react-native-elements";
 
-import {listWordData} from "../Data";
+import { listWordData } from "../Data";
+import Spinner from "../components/Spinner";
+import { TouchableOpacity } from "react-native-gesture-handler";
 
-const deviceWidth = Dimensions.get('window').width;
-const screen = (percent) => percent * deviceWidth / 100;
+const deviceWidth = Dimensions.get("window").width;
+const screen = (precent) => (precent * deviceWidth) / 100;
 
-export default function ListWord({ navigation }) {
-  const [list, setList] = useState(listWordData);
+export default function ListWord({ navigation, route }) {
+  const { id, navigateCourse } = route.params;
+  
+  const [list, setList] = useState();
   const [searchValue, setSearchValue] = useState();
+  const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(()=>{
-    // setSearchValue(searchValue)
-    // full text search owr day 
+  useEffect(() => {
     
-  },[searchValue])
+    const queryString = `http://localhost:3000/courses/${id}`;
+   
+    axios
+      .get(queryString)
+      .then((res) => {    
+        const { id, courseName, listWord } = res.data;      
+        setList(listWord);
+        setIsLoading(false);
+        console.log(`axios lw , word` ,listWord[0])
+      })
+      .catch((err) => console.log(err));
+  }, []);
 
-  function onChangeText(text){
+  function onChangeText(text) {
     text = text.toLocaleLowerCase().trim();
-    if (text ==''){
-
+    setSearchValue(text);
+    if (text == "") {
       setList(listWordData);
       return;
-    } 
+    }
+    const miniSearch = new MiniSearch({
+      fields: ["mean", "word"], // fields to index for full-text search
+      storeFields: ["word", "mean", "miss", "level", "mems"], // fields to return with search results
+    });
 
-    let newList =list.filter( ls => {
-       ls.mean == text || ls.word == text
-    } );
-    setList(newList);
+    miniSearch.addAll(listWordData);
+    let result = miniSearch.search(text);
 
+    setList(result);
   }
+
+  function onPressNavigateWordDetail(wordId, id) {    
+    return navigation.navigate("WordDetail", {
+      wordId: wordId,
+      id: id,
+    });
+  }
+
   return (
     <View style={styles.container}>
-      <TextInput
-        style={{
-          height: screen(7),
-          borderColor: "gray",
-          borderWidth: 1,
-          marginTop: screen(2),
-          marginBottom: screen(3),
-          borderRadius: screen(1),
-          paddingLeft: screen(2)
-        }}
-        placeholder='Nhập từ bạn muốn tìm kiếm'
-         onChangeText={text => onChangeText(text)}
-         value={searchValue}
-      />
-      <FlatList
-        data={list}
-        renderItem={({ item }) => (
-          <Word unit={item} onPress={() => navigation.navigate("WordDetail")} />
-        )}
-        keyExtractor={(item) => `${item.id}`}
-        scrollEnabled={true}
-        showsVerticalScrollIndicator={false}
-      />
+      {(!isLoading && (
+        <View style={styles.wrap}>
+          <SearchBar
+            lightTheme
+            placeholder="何か調べているか"
+            ContainerStyle={styles.searchbar}
+            inputContainerStyle={styles.inputContainerStyle}
+            onChangeText={(text) => onChangeText(text)}
+            value={searchValue}
+          />
 
-      <View style={styles.footer}>
-        <Text
-          style={styles.review}
-          onPress={() => navigation.navigate("Review")}
-        >
-          Review now !!!
-        </Text>
-      </View>
+          <FlatList
+            data={list}
+            renderItem={({ item }) => (
+              <Word
+                word={item}
+                id={{ id }}
+                onPress={onPressNavigateWordDetail}
+              />
+            )}
+            keyExtractor={(item) => `${item.id}`}
+            scrollEnabled={true}
+            showsVerticalScrollIndicator={false}
+          />
+
+          <View style={styles.footer}>
+            <TouchableOpacity onPress={() => navigation.navigate("Review")}>
+              <Text style={styles.review}>Review now !!!</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      )) || <Spinner />}
     </View>
   );
 }
 
 //styled componet
 const styles = StyleSheet.create({
+  wrap: {
+    flex: 1,
+    padding: 0,
+    margin: 0,
+  },
   container: {
     paddingHorizontal: 20,
     width: "100%",
@@ -89,20 +113,18 @@ const styles = StyleSheet.create({
     alignItems: "stretch",
     justifyContent: "flex-start",
   },
-  header: {
-    paddingTop: 50,
-    backgroundColor: "#0ab",
-    height: 100,
-  },
   footer: {
     position: "absolute",
-    bottom: screen(0),
-    height: screen(23),
+    bottom: screen(10),
+    left: screen(-5),
+    height: 70,
     width: screen(100),
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#fff222",
-    borderRadius: 50
+    borderRadius: 50,
+    borderBottomColor: "#ffa222",
+    borderBottomWidth: 10,
   },
   review: {
     textTransform: "uppercase",
@@ -110,4 +132,12 @@ const styles = StyleSheet.create({
     fontWeight: "500",
     fontSize: 30,
   },
+  searchbar: {
+    height: 40,
+    backgroundColor: "#ffffff",
+    marginBottom: 30,
+  },
+  inputContainerStyle:{
+    backgroundColor: "#ffffff",
+  }
 });
