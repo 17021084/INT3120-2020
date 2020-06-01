@@ -5,6 +5,7 @@ import { StyleSheet, Text, View, Button } from "react-native";
 import Word from "../components/Word";
 import WordContainer from "../components/WordContainer";
 import Spinner from "../components/Spinner";
+import Mems from "../components/Mems";
 
 export default function listWord({ navigation, route }) {
   // React.useEffect(() => {
@@ -19,20 +20,19 @@ export default function listWord({ navigation, route }) {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const { wordId, id } = route.params;
+    const { wordId, id } = route.params; // gui nguen word id  
     const queryString = `http://localhost:3000/courses/${id}`;
     axios
       .get(queryString)
       .then((res) => {
         const { id, courseName, listWord } = res.data;
-
-        const newWord = listWord.filter((w) => w.wordId === wordId);
+        // suwar w.wordI d  w.id  giu nguyen wordI d ve phai
+        const newWord = listWord.filter((w) => w.id === wordId);
 
         setWord(newWord[0]);
-
         setIsLoading(false);
-
         setCourseInfor({
+          id: id,
           listWord: listWord,
           courseName: courseName,
         });
@@ -40,41 +40,46 @@ export default function listWord({ navigation, route }) {
       .catch((err) => console.log(err));
   }, []);
 
-  function handleOnThunderPress() {
-    console.log("handleOnThunderPress(); run");
-
-    const { wordId, id } = route.params;
-    const { listWord, courseName } = courseInfor;
-
-    // change miss
-    //============
-    let newWord = listWord.filter((wd) => wd.wordId === wordId)[0];
+  function handleOnThunderPress(blur){
+    const { id, courseName, listWord } = courseInfor;
+    const wordId = word.id;
+    let newWord = listWord.filter((wd) => wd.id === wordId)[0];
     const index = listWord.indexOf(newWord);
-    const miss = newWord.miss;
-    newWord = {
-      ...newWord,
-      miss: !miss,
-    };
+    if( blur ===1 ){    // current is false. set true
+      newWord = {
+        ...newWord,
+        miss: true,
+      };   
+   
+    }else{
+      newWord = {
+        ...newWord,
+        miss: false,
+      };   
+  
+    }   
     let newListWord = [
-      ...listWord.slice(0, index),
-      newWord,
-      ...listWord.slice(index + 1),
-    ];
+        ...listWord.slice(0, index),
+        newWord,
+        ...listWord.slice(index + 1),
+      ];
 
     const putData = {
-      courseName: courseName,
-      listWord: newListWord,
-    };
-    // ============
-
+        courseName: courseName,
+        listWord: newListWord,
+      };
+    
     const queryString = `http://localhost:3000/courses/${id}`;
     axios
-      .put(queryString,putData)
-      .then(res => console.log('success'))
+      .put(queryString, putData)
+      .then((res) => {
+        console.log(" set thunder success");
+        const newListWord = res.data.listWord;
+      })
       .catch((error) => console.log(error));
 
-    return true;
   }
+
 
   return (
     <View style={styles.container}>
@@ -83,45 +88,23 @@ export default function listWord({ navigation, route }) {
           <WordContainer
             objWord={word}
             hideMean={false}
-            handleOnThunderPress={handleOnThunderPress}
+            courseInfor={courseInfor}
+            onPress={handleOnThunderPress}
           />
 
           <View style={styles.Mem}>
+           
+         
+            <Mems word={word}/>
+                
+
             <Button
-              title="Create a new Mems"
+              title="Create your own mens"
               onPress={() => {
                 navigation.navigate("AddMem");
               }}
             />
 
-            <View style={styles.MemText}>
-              <Text>đăng luc =))</Text>
-
-              <Text
-                style={{
-                  paddingTop: 3,
-                  fontStyle: "italic",
-                  textAlign: "right",
-                }}
-              >
-                {" "}
-                - Nguyễn Văn A
-              </Text>
-            </View>
-
-            <View style={styles.MemText}>
-              {/* <Text>{route.params?.post}</Text> */}
-              <Text
-                style={{
-                  paddingTop: 3,
-                  fontStyle: "italic",
-                  textAlign: "right",
-                }}
-              >
-                {" "}
-                - Nguyễn Văn A
-              </Text>
-            </View>
           </View>
         </View>
       )}
@@ -129,7 +112,9 @@ export default function listWord({ navigation, route }) {
   );
 }
 
-//styled componet
+
+
+
 const styles = StyleSheet.create({
   container: {
     width: "100%",
@@ -170,9 +155,7 @@ const styles = StyleSheet.create({
     height: 35,
     marginLeft: "auto",
   },
-  Mem: {
-    padding: 30,
-  },
+  
   MemText: {
     paddingTop: 5,
     paddingBottom: 5,

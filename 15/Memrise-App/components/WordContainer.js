@@ -7,11 +7,10 @@ import {
   Dimensions,
   TouchableOpacity,
 } from "react-native";
+import axios from "axios";
 
 import TreeImages from "../TreeImages";
-import planet from "../assets/planet.png";
 import thunder from "../assets/thunder.png";
-import wateringCan from "../assets/watering-can.png";
 
 const deviceWidth = Dimensions.get("window").width;
 const screen = (percent) => (percent * deviceWidth) / 100;
@@ -20,7 +19,8 @@ const blur = 0.1;
 export default function WordContainer(props) {
   const { word, mean, level, miss } = props.objWord;
   const hideMean = props.hideMean;
-  const { handleOnThunderPress } = props;
+  const handleOnThunderPress =props.onPress;
+  
 
   const [blurThunder, setBlurThunder] = useState(() => {
     if (miss) {
@@ -30,19 +30,17 @@ export default function WordContainer(props) {
     }
   });
 
-  useEffect(() => {
-    //call api
-  }, [blurThunder]);
+  
 
   function handleOnPress() {
-    if (!handleOnThunderPress) return;
-
+    if(!handleOnThunderPress) return;
     if (blurThunder === 1) {
+      handleOnThunderPress(blur)
       setBlurThunder(blur);
     } else {
+      handleOnThunderPress(1);
       setBlurThunder(1);
     }
-    handleOnThunderPress();
   }
 
   return (

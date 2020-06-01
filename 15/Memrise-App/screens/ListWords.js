@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import MiniSearch from "minisearch";
 import { StyleSheet, Text, View, FlatList, Dimensions } from "react-native";
@@ -15,50 +15,68 @@ const screen = (precent) => (precent * deviceWidth) / 100;
 
 export default function ListWord({ navigation, route }) {
   const { id, navigateCourse } = route.params;
-  
   const [list, setList] = useState();
+  const [cloneList, setCloneList] = useState();
   const [searchValue, setSearchValue] = useState();
   const [isLoading, setIsLoading] = useState(true);
 
+  const typingTimeOut = useRef(null);
   useEffect(() => {
-    
     const queryString = `http://localhost:3000/courses/${id}`;
-   
     axios
       .get(queryString)
-      .then((res) => {    
-        const { id, courseName, listWord } = res.data;      
+      .then((res) => {
+        const { id, courseName, listWord } = res.data;
         setList(listWord);
+        setCloneList(listWord);
         setIsLoading(false);
-        console.log(`axios lw , word` ,listWord[0])
       })
       .catch((err) => console.log(err));
   }, []);
 
-  function onChangeText(text) {
-    text = text.toLocaleLowerCase().trim();
-    setSearchValue(text);
-    if (text == "") {
-      setList(listWordData);
-      return;
+  useEffect(() => {
+    if (typeof list == "undefined" || typeof searchValue =="undefined" ) return; //ignore componentDidMount
+    //Debounce
+
+    //Clear previous timeOut
+    if (typingTimeOut.current) {
+      clearTimeout(typingTimeOut.current);
     }
-    const miniSearch = new MiniSearch({
-      fields: ["mean", "word"], // fields to index for full-text search
-      storeFields: ["word", "mean", "miss", "level", "mems"], // fields to return with search results
-    });
 
-    miniSearch.addAll(listWordData);
-    let result = miniSearch.search(text);
+    typingTimeOut.current = setTimeout(() => {   
+      
+      if (searchValue.trim() == "") {
+        setList(cloneList);
+        return;
+      }
+      const miniSearch = new MiniSearch({
+        fields: ["mean", "word"], // fields to index for full-text search
+        storeFields: ["word", "mean", "miss", "level", "mems", "id"], // fields to return with search results
+      });
 
-    setList(result);
+      miniSearch.addAll(cloneList);
+      let result = miniSearch.search(searchValue.trim());
+      setList(result); // be careful this line .it can cause the bug
+    }, 300);
+
+  });
+
+  function onChangeText(text) {
+    text = text.toLocaleLowerCase();
+    setSearchValue(text);
   }
 
-  function onPressNavigateWordDetail(wordId, id) {    
+  function onPressNavigateWordDetail(wordId, id) {
     return navigation.navigate("WordDetail", {
-      wordId: wordId,
+      wordId: wordId, // de nguyen wordI d
       id: id,
     });
   }
+  function onPressNavigateReview(){
+    return navigation.navigate("Review",{listWord:list}) ;
+  }
+
+
 
   return (
     <View style={styles.container}>
@@ -88,7 +106,9 @@ export default function ListWord({ navigation, route }) {
           />
 
           <View style={styles.footer}>
-            <TouchableOpacity onPress={() => navigation.navigate("Review")}>
+            <TouchableOpacity 
+            onPress={onPressNavigateReview}
+            >
               <Text style={styles.review}>Review now !!!</Text>
             </TouchableOpacity>
           </View>
@@ -137,7 +157,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#ffffff",
     marginBottom: 30,
   },
-  inputContainerStyle:{
+  inputContainerStyle: {
     backgroundColor: "#ffffff",
-  }
+  },
 });

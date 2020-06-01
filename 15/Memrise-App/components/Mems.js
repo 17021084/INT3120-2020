@@ -1,28 +1,33 @@
 import React, { useState, useEffect } from "react";
-import { StyleSheet,Text, View, Button } from "react-native";
+import { StyleSheet, Text, View, Button } from "react-native";
+import { FlatList } from "react-native-gesture-handler";
 
-function Mems() {
+const MemContent = ( props ) =>(
+  <View style={styles.MemText}>
+    <Text>{ props.text } </Text>
+  </View>
+);
+
+function Mems(props) {
+  const {mems} = props.word;
+ 
+  // Alisa ! No mem created for this ...
   return (
     <View style={styles.Mem}>
-         <Text style ={ {textAlign:'center' , fontSize:20 , fontWeight:'50' ,color:'blue', marginBottom :30} }>Let's us help you Remember</Text>
+      <Text
+        style={{
+          textAlign: "center",
+          fontSize: 20,
+          fontWeight: "50",
+          color: "blue",
+          marginBottom: 30,
+        }}
+      >
+        Your Mems
+      </Text>
 
-      <View style={styles.MemText}>
-        <Text>tu nay nen nghe nhu nay </Text>
-        <Text
-          style={{ paddingTop: 3, fontStyle: "italic", textAlign: "right" }}
-        >
-          - Nguyễn Văn A
-        </Text>
-      </View>
-
-      <View style={styles.MemText}>
-       <Text>konichiwa la con chim bay qua</Text>
-        <Text
-          style={{ paddingTop: 3, fontStyle: "italic", textAlign: "right" }}
-        >
-          - Nguyễn Văn A
-        </Text>
-      </View>
+       {  mems.length==0 && ( <Text style= {styles.MemText}>  Alisa ! No mem created for this ...</Text>  ) || mems.map( mem => <MemContent text = {mem} />  )  }
+        
     </View>
   );
 }
@@ -34,8 +39,10 @@ const styles = StyleSheet.create({
   },
   MemText: {
     paddingTop: 5,
-    paddingBottom: 5,
+    paddingBottom: 10,
     borderBottomWidth: 0.2,
+    textAlign:"center",
+    fontSize:20
     // borderStyle:'solid',
   },
 });
