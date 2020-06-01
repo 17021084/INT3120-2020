@@ -89,7 +89,7 @@
                     "mean":"Hán tự" , 
                     "miss":true , 
                     "level":4,
-                    "x"
+                    "mem": []
                 },
                 { 
                     "id":11 , 
@@ -98,7 +98,7 @@
                     "mean":"Gia đình" , 
                     "miss":true , 
                     "level":1,
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":12 , 
@@ -107,7 +107,7 @@
                     "mean":"Kinh tế" , 
                     "miss":true , 
                     "level":4,
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":13 , 
@@ -116,7 +116,7 @@
                     "mean":"Vườn" , 
                     "miss":true , 
                     "level":4,
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":14 , 
@@ -125,7 +125,7 @@
                     "mean":"Đại học" , 
                     "miss":true , 
                     "level":1,
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":15 , 
@@ -134,7 +134,7 @@
                     "mean":"Nhà nghiên cứu" , 
                     "miss":true , 
                     "level":1,
-                    "x" 
+                    "mem": [] 
                 }
                               
             ]
@@ -159,7 +159,7 @@
                     "mean":"Điện, đèn điện" , 
                     "miss":true , 
                     "level":1,
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":3 , 
@@ -168,7 +168,7 @@
                     "mean":"Tôi" , 
                     "miss":true , 
                     "level":3,
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":4 , 
@@ -177,7 +177,7 @@
                     "mean":"Mọi người" , 
                     "miss":true , 
                     "level":1,
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":5 , 
@@ -186,7 +186,7 @@
                     "mean":"Thầy/cô" , 
                     "miss":true , 
                     "level":2,
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":6 , 
@@ -195,7 +195,7 @@
                     "mean":"Học sinh, sinh viên" , 
                     "miss":true , 
                     "level":3,
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":7 , 
@@ -204,7 +204,7 @@
                     "mean":"Bác sĩ" , 
                     "miss":true , 
                     "level":1,
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":8 , 
@@ -213,7 +213,7 @@
                     "mean":"Nhân viên công ty" , 
                     "miss":true , 
                     "level":2,
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":9 , 
@@ -222,7 +222,7 @@
                     "mean":"Giáo viên" , 
                     "miss":true , 
                     "level":3,
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":10 , 
@@ -231,7 +231,7 @@
                     "mean":"Hàn Quốc" , 
                     "miss":true , 
                     "level":4,
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":11 , 
@@ -240,7 +240,7 @@
                     "mean":"Trung Quốc" , 
                     "miss":true , 
                     "level":1,
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":12 , 
@@ -249,7 +249,7 @@
                     "mean":"Việt Nam" , 
                     "miss":true , 
                     "level":2,
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":13 , 
@@ -258,7 +258,7 @@
                     "mean":"Ngân hàng" , 
                     "miss":true , 
                     "level":3,
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":14 , 
@@ -267,7 +267,7 @@
                     "mean":"Sách" , 
                     "miss":true , 
                     "level":4,
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":15 , 
@@ -276,7 +276,7 @@
                     "mean":"Bút chì" , 
                     "miss":true , 
                     "level":4,
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":16 , 
@@ -285,7 +285,7 @@
                     "mean":"Đồng hồ" , 
                     "miss":true , 
                     "level":1,
-                    "x" 
+                    "mem": [] 
                 }
                               
             ]
@@ -302,7 +302,7 @@
                     "mean":"Ô, dù" , 
                     "miss":true , 
                     "level":1,
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":2 , 
@@ -311,7 +311,7 @@
                     "mean":"Xe hơi" , 
                     "miss":true , 
                     "level":2,
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":3 , 
@@ -320,7 +320,7 @@
                     "mean":"Xe đạp" , 
                     "miss":true , 
                     "level":3,
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":4 , 
@@ -328,7 +328,7 @@
                     "yomikata": ["ざっし"]  ,
                     "mean":"Tạp chí" , 
                     "miss":true , "level":4,
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":5 , 
@@ -337,7 +337,7 @@
                     "mean":"Sổ tay" , 
                     "miss":true , 
                     "level":1,
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":6 , 
@@ -345,7 +345,7 @@
                     "yomikata": ["めいし"]  ,
                     "mean":"Danh thiếp" , 
                     "miss":true , "level":2,
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":7 , 
@@ -354,7 +354,7 @@
                     "mean":"Từ điển" , 
                     "miss":true , 
                     "level":3,
-                    "x" 
+                    "mem": [] 
                 },    
                 { 
                     "id":8 , 
@@ -363,7 +363,7 @@
                     "mean":"Tiếng Anh" , 
                     "miss":true , 
                     "level":4,
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":9 , 
@@ -372,7 +372,7 @@
                     "mean":"Phim" , 
                     "miss":true , 
                     "level":1,
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":10 , 
@@ -381,7 +381,7 @@
                     "mean":"Tiếng Nhật" , 
                     "miss":true , 
                     "level":1,
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":11 , 
@@ -390,7 +390,7 @@
                     "mean":"Báo" , 
                     "miss":true , 
                     "level":2, 
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":12 , 
@@ -399,7 +399,7 @@
                     "mean":"Lớp học, phòng học" , 
                     "miss":true , 
                     "level":3, 
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":13 , 
@@ -408,7 +408,7 @@
                     "mean":"Nhà ăn" , 
                     "miss":true , 
                     "level":1,
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":14 , 
@@ -417,7 +417,7 @@
                     "mean":"Văn phòng" , 
                     "miss":true , 
                     "level":2, 
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":15 , 
@@ -426,7 +426,7 @@
                     "mean":"Phòng họp" , 
                     "miss":true , 
                     "level":3,
-                    "x" 
+                    "mem": [] 
                 }
                               
             ]
@@ -443,7 +443,7 @@
                     "mean":"Bộ phận tiếp tân" , 
                     "miss":true , 
                     "level":3, 
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":2 , 
@@ -452,7 +452,7 @@
                     "mean":"Cầu thang" , 
                     "miss":true , 
                     "level":2,
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":3 , 
@@ -461,7 +461,7 @@
                     "mean":"Công ty" , 
                     "miss":true , 
                     "level":1,
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":4 , 
@@ -470,7 +470,7 @@
                     "mean":"Đất nước" , 
                     "miss":true , 
                     "level":3, 
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":5 , 
@@ -479,7 +479,7 @@
                     "mean":"Điện thoại" , 
                     "miss":true , 
                     "level":2, 
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":6 , 
@@ -488,7 +488,7 @@
                     "mean":"Giầy" , 
                     "miss":true , 
                     "level":1,
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":7 , 
@@ -497,7 +497,7 @@
                     "mean":"Tất, bít tất" , 
                     "miss":true , 
                     "level":3, 
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":8 , 
@@ -506,7 +506,7 @@
                     "mean":"Tầng hầm, dưới mặt đất" , 
                     "miss":true , 
                     "level":4,
-                    "x" 
+                    "mem": [] 
                 },
                 { 
                     "id":9 , 
@@ -514,12 +514,54 @@
                     "yomikata": ["ひゃく"]  ,
                     "mean":"Trăm" , 
                     "miss":true , 
-                    "level":1,"x" },
-                { "id":10 , "word":"千" , "yomikata": [] "せん" ,"mean":"Nghìn" , "miss":true , "level":1,"x" },
-                { "id":11 , "word":"万" , "yomikata": [] "まん" ,"mean":"Vạn, mười nghìn" , "miss":true , "level":1,"x" },
-                { "id":12, "word":"眼鏡" , "yomikata": [] "めがね" ,"mean":"Kính mắt" , "miss":true , "level":7, "x" },
-                { "id":13 , "word":"服" , "yomikata": [] "ふく" ,"mean":"Quần áo" , "miss":true , "level":3, "x" },
-                { "id":14 , "word":"化粧品" , "yomikata": [] "けしょうひん" ,"mean":"Mỹ phẩm, đồ hóa trang" , "miss":true , "level":7, "x" },
+                    "level":4,
+                    "mem": [] 
+                },
+                { 
+                    "id":10 , 
+                    "word":"千" , 
+                    "yomikata": ["せん"]  ,
+                    "mean":"Nghìn" , 
+                    "miss":true , 
+                    "level":4,
+                    "mem": [] 
+                },
+                { 
+                    "id":11 , 
+                    "word":"万" , 
+                    "yomikata": ["まん"]  ,
+                    "mean":"Vạn, mười nghìn" , 
+                    "miss":true , 
+                    "level":4,
+                    "mem": [] 
+                },
+                { 
+                    "id":12, 
+                    "word":"眼鏡" , 
+                    "yomikata": ["めがね"]  ,
+                    "mean":"Kính mắt" , 
+                    "miss":true , 
+                    "level":4, 
+                    "mem": [] 
+                },
+                { 
+                    "id":13 , 
+                    "word":"服" , 
+                    "yomikata": ["ふく"]  ,
+                    "mean":"Quần áo" , 
+                    "miss":true , 
+                    "level":3, 
+                    "mem": [] 
+                },
+                { 
+                    "id":14 , 
+                    "word":"化粧品" , 
+                    "yomikata": ["けしょうひん"]  ,
+                    "mean":"Mỹ phẩm, đồ hóa trang" , 
+                    "miss":true , 
+                    "level":4, 
+                    "mem": [] 
+                },
                 { 
                     "id":15 , 
                     "word":"部屋" , 
@@ -527,7 +569,7 @@
                     "mean":"Căn phòng" , 
                     "miss":true , 
                     "level":1,
-                    "x" 
+                    "mem": [] 
                 }            
             ]
         },
@@ -535,30 +577,141 @@
             "id":5,
             "courseName":"人間",
             "listWord": [
-                {
-                    "id": 1,
-                    "word": "車",
-                    "yomikata": [] ["くるま","しゃ"],
-                    "mean": "",
-                    "miss": true,
-                    "level": ,
-                    "mems": [""]
+
+                { 
+                    "id":1 , 
+                    "word":"家具" , 
+                    "yomikata": ["かぐ"]  ,
+                    "mean":"Dụng cụ gia đình" , 
+                    "miss":true , 
+                    "level":4, 
+                    "mem": [] 
                 },
-                { "id":61 , "word":"家具" , "yomikata": [] "かぐ" ,"mean":"Dụng cụ gia đình" , "miss":true , "level":5, "x" },
-    { "id":62 , "word":"食料" , "yomikata": [] "しょくりょう" ,"mean":"Lương thực" , "miss":true , "level":5, "x" },
-    { "id":63 , "word":"駐車場" , "yomikata": [] "ちゅうしゃじょう" ,"mean":"Bãi đỗ xe" , "miss":true , "level":4, "x" },
-    { "id":64 , "word":"起きる" , "yomikata": [] "おきる" ,"mean":"Dậy, thức dậy" , "miss":true , "level":3, "x" },
-    { "id":65 , "word":"寝る" , "yomikata": [] "ねる" ,"mean":"Ngủ, đi ngủ" , "miss":true , "level":3, "x" },
-    { "id":66 , "word":"働く" , "yomikata": [] "はたらく" ,"mean":"Làm việc" , "miss":true , "level":3, "x" },
-    { "id":67 , "word":"休む" , "yomikata": [] "やすむ" ,"mean":"Nghỉ, nghỉ ngơi" , "miss":true , "level":3, "x" },
-    { "id":68 , "word":"勉強" , "yomikata": [] "べんきょう" ,"mean":"Học" , "miss":true , "level":3, "x" },
-    { "id":69 , "word":"終わる" , "yomikata": [] "おわる" ,"mean":"Hết, kết thúc, xong" , "miss":true , "level":2,"x" },
-    { "id":70 , "word":"郵便局" , "yomikata": [] "ゆうびんきょく" ,"mean":"Bưu điện" , "miss":true , "level":2,"x" },
-    { "id":71 , "word":"図書館" , "yomikata": [] "としょかん" ,"mean":"Thư viện" , "miss":true , "level":2,"x" },
-    { "id":72 , "word":"美術館" , "yomikata": [] "びじゅつかん" ,"mean":"Bảo tàng mỹ thuật" , "miss":true , "level":2,"x" },
-    { "id":73 , "word":"今" , "yomikata": [] "いま" ,"mean":"Bây giờ" , "miss":true , "level":2,"x" },
-    { "id":74 , "word":"半" , "yomikata": [] "はん" ,"mean":"Một nửa" , "miss":true , "level":2,"x" },
-    { "id":75 , "word":"午前" , "yomikata": [] "ごぜん" ,"mean":"Trước 12 giờ trưa, sáng" , "miss":true , "level":2,"x" }
+                { 
+                    "id":2 , 
+                    "word":"食料" , 
+                    "yomikata": ["しょくりょう"]  ,
+                    "mean":"Lương thực" , 
+                    "miss":true , 
+                    "level":4, 
+                    "mem": [] 
+                },
+                { 
+                    "id":3 , 
+                    "word":"駐車場" , 
+                    "yomikata": ["ちゅうしゃじょう"]  ,
+                    "mean":"Bãi đỗ xe" , 
+                    "miss":true , 
+                    "level":4, 
+                    "mem": [] 
+                },
+                { 
+                    "id":4 , 
+                    "word":"起きる" , 
+                    "yomikata": ["おきる"]  ,
+                    "mean":"Dậy, thức dậy" , 
+                    "miss":true , 
+                    "level":3, 
+                    "mem": [] 
+                },
+                { 
+                    "id":5 , 
+                    "word":"寝る" , 
+                    "yomikata": ["ねる"]  ,
+                    "mean":"Ngủ, đi ngủ" , 
+                    "miss":true , 
+                    "level":2, 
+                    "mem": [] 
+                },
+                { 
+                    "id":6 , 
+                    "word":"働く" , 
+                    "yomikata": ["はたらく"]  ,
+                    "mean":"Làm việc" , 
+                    "miss":true , 
+                    "level":1, 
+                    "mem": [] 
+                },
+                { 
+                    "id":7 , 
+                    "word":"休む" , 
+                    "yomikata": ["やすむ"]  ,
+                    "mean":"Nghỉ, nghỉ ngơi" , 
+                    "miss":true , 
+                    "level":3, 
+                    "mem": [] 
+                },
+                { 
+                    "id":8 , 
+                    "word":"勉強" ,
+                    "yomikata": ["べんきょう"]  ,
+                    "mean":"Học" , 
+                    "miss":true , 
+                    "level":3, 
+                    "mem": [] 
+                },
+                { 
+                    "id":9 , 
+                    "word":"終わる" , 
+                    "yomikata": ["おわる"]  ,
+                    "mean":"Hết, kết thúc, xong" , 
+                    "miss":true , 
+                    "level":2,
+                    "mem": [] 
+                },
+                { 
+                    "id":10 , 
+                    "word":"郵便局" , 
+                    "yomikata": ["ゆうびんきょく"] ,
+                    "mean":"Bưu điện" , 
+                    "miss":true , 
+                    "level":2,
+                    "mem": [] 
+                },
+                { 
+                    "id":11 ,
+                    "word":"図書館" , 
+                    "yomikata": ["としょかん"]  ,
+                    "mean":"Thư viện" ,
+                    "miss":true , 
+                    "level":2,
+                    "mem": [] 
+                },
+                { 
+                    "id":12 , 
+                    "word":"美術館" , 
+                    "yomikata": ["びじゅつかん"]  ,
+                    "mean":"Bảo tàng mỹ thuật" , 
+                    "miss":true , 
+                    "level":2,
+                    "mem": [] 
+                },
+                { 
+                    "id":13 , 
+                    "word":"今" , 
+                    "yomikata": ["いま"]  ,
+                    "mean":"Bây giờ" , 
+                    "miss":true , "level":4,
+                    "mem": [] 
+                },
+                { 
+                    "id":14 , 
+                    "word":"半" , 
+                    "yomikata": ["はん"]  ,
+                    "mean":"Một nửa" , 
+                    "miss":true , 
+                    "level":2,
+                    "mem": [] 
+                },
+                { 
+                    "id":15 , 
+                    "word":"午前" , 
+                    "yomikata": ["ごぜん"]  ,
+                    "mean":"Trước 12 giờ trưa, sáng" , 
+                    "miss":true , 
+                    "level":2,
+                    "mem": [] 
+                }
                               
             ]
         },
@@ -566,30 +719,142 @@
             "id":6,
             "courseName":"交通",
             "listWord": [
-                {
-                    "id": 1,
-                    "word": "車",
-                    "yomikata": [] ["くるま","しゃ"],
-                    "mean": "",
-                    "miss": true,
-                    "level": ,
-                    "mems": [""]
+
+                { 
+                    "id":1 , 
+                    "word":"午前" ,
+                    "yomikata": ["ごご"]  ,
+                    "mean":"Sau 12 giờ trưa, chiều" , 
+                    "miss":true , 
+                    "level":2,
+                    "mem": [] 
                 },
-                { "id":76 , "word":"午前" , "yomikata": [] "ごご" ,"mean":"Sau 12 giờ trưa, chiều" , "miss":true , "level":2,"x" },
-    { "id":77 , "word":"朝" , "yomikata": [] "あさ" ,"mean":"Buổi sáng" , "miss":true , "level":2,"x" },
-    { "id":78 , "word":"昼" , "yomikata": [] "ひる" ,"mean":"Buổi trưa" , "miss":true , "level":2,"x" },
-    { "id":79 , "word":"晩" , "yomikata": [] "ばん" ,"mean":"Buổi tối" , "miss":true , "level":2,"x" },
-    { "id":80 , "word":"夜" , "yomikata": [] "よる" ,"mean":"Ban đêm" , "miss":true , "level":2,"x" },
-    { "id":81 , "word":"今朝" , "yomikata": [] "けさ" ,"mean":"Sáng nay" , "miss":true , "level":2,"x" },
-    { "id":82 , "word":"今晩" , "yomikata": [] "こんばん" ,"mean":"Tối nay" , "miss":true , "level":2,"x" },
-    { "id":83 , "word":"昼休み" , "yomikata": [] "ひるやすみ" ,"mean":"Nghỉ trưa" , "miss":true , "level":2,"x" },
-    { "id":84 , "word":"毎朝" , "yomikata": [] "まいあさ" ,"mean":"Mỗi sáng" , "miss":true , "level":2,"x" },
-    { "id":85 , "word":"毎晩" , "yomikata": [] "まいばん" ,"mean":"Mỗi tối" , "miss":true , "level":3, "x" },
-    { "id":86 , "word":"毎日" , "yomikata": [] "まいにち" ,"mean":"Mỗi ngày" , "miss":true , "level":1,"x" },
-    { "id":87 , "word":"月曜日" , "yomikata": [] "げつようび" ,"mean":"Thứ hai" , "miss":true , "level":1,"x" },
-    { "id":88 , "word":"火曜日" , "yomikata": [] "かようび" ,"mean":"Thứ ba" , "miss":true , "level":2,"x","x" },
-    { "id":89 , "word":"水曜日" , "yomikata": [] "すいようび" ,"mean":"Thứ tư" , "miss":true , "level":2,"x","x" },
-    { "id":90 , "word":"木曜日" , "yomikata": [] "もくようび" ,"mean":"Thứ năm" , "miss":true , "level":3, "x" }
+                { 
+                    "id":2 , 
+                    "word":"朝" , 
+                    "yomikata": ["あさ"]  ,
+                    "mean":"Buổi sáng" , 
+                    "miss":true , 
+                    "level":2,
+                    "mem": [] 
+                },
+                { 
+                    "id":3 , 
+                    "word":"昼" , 
+                    "yomikata": ["ひる"]  ,
+                    "mean":"Buổi trưa" , 
+                    "miss":true , 
+                    "level":4,
+                    "mem": [] 
+                },
+                { 
+                    "id":4 , 
+                    "word":"晩" , 
+                    "yomikata": ["ばん"]  ,
+                    "mean":"Buổi tối" , 
+                    "miss":true , 
+                    "level":2,
+                    "mem": [] 
+                },
+                { 
+                    "id":5 , 
+                    "word":"夜" , 
+                    "yomikata": ["よる"]  ,
+                    "mean":"Ban đêm" , 
+                    "miss":true , 
+                    "level":3,
+                    "mem": [] 
+                },
+                { 
+                    "id":6 , 
+                    "word":"今朝" , 
+                    "yomikata": ["けさ"]  ,
+                    "mean":"Sáng nay" , 
+                    "miss":true , 
+                    "level":4,
+                    "mem": [] 
+                },
+                { 
+                    "id":7 , 
+                    "word":"今晩" , 
+                    "yomikata": ["こんばん"]  ,
+                    "mean":"Tối nay" , 
+                    "miss":true , 
+                    "level":3,
+                    "mem": [] 
+                },
+                { 
+                    "id":8 , 
+                    "word":"昼休み" , 
+                    "yomikata": ["ひるやすみ"]  ,
+                    "mean":"Nghỉ trưa" , 
+                    "miss":true , 
+                    "level":4,
+                    "mem": [] 
+                },
+                { 
+                    "id":9 , 
+                    "word":"毎朝" , 
+                    "yomikata": ["まいあさ"]  ,
+                    "mean":"Mỗi sáng" , 
+                    "miss":true , 
+                    "level":4,
+                    "mem": [] 
+                },
+                { 
+                    "id":10 , 
+                    "word":"毎晩" , 
+                    "yomikata": ["まいばん"]  ,
+                    "mean":"Mỗi tối" , 
+                    "miss":true , 
+                    "level":3, 
+                    "mem": [] 
+                },
+                { 
+                    "id":11 , 
+                    "word":"毎日" , 
+                    "yomikata": ["まいにち"]  ,
+                    "mean":"Mỗi ngày" , 
+                    "miss":true , 
+                    "level":1,
+                    "mem": [] 
+                },
+                { 
+                    "id":12 , 
+                    "word":"月曜日" , 
+                    "yomikata": ["げつようび"]  ,
+                    "mean":"Thứ hai" , 
+                    "miss":true , 
+                    "level":4,
+                    "mem": [] 
+                },
+                { 
+                    "id":13 , 
+                    "word":"火曜日" , 
+                    "yomikata": ["かようび"]  ,
+                    "mean":"Thứ ba" , 
+                    "miss":true , 
+                    "level":2,
+                    "mem": [] 
+                },
+                { 
+                    "id":14 , 
+                    "word":"水曜日" , 
+                    "yomikata": ["すいようび"]  ,
+                    "mean":"Thứ tư" , 
+                    "miss":true , 
+                    "level":2,
+                    "mem": [] 
+                },
+                { 
+                    "id":15 , 
+                    "word":"木曜日" , 
+                    "yomikata": ["もくようび"]  ,
+                    "mean":"Thứ năm" , 
+                    "miss":true , 
+                    "level":3, 
+                    "mem": [] 
+                }
                               
             ]
         },
@@ -597,61 +862,285 @@
             "id":7,
             "courseName":"植物",
             "listWord": [
-                {
-                    "id": 1,
-                    "word": "車",
-                    "yomikata": [] ["くるま","しゃ"],
-                    "mean": "",
-                    "miss": true,
-                    "level": ,
-                    "mems": [""]
+                
+                { 
+                    "id":1 , 
+                    "word":"金曜日" , 
+                    "yomikata": ["きんようび"]  ,
+                    "mean":"Thứ sáu" , 
+                    "miss":true , 
+                    "level":2,
+                    "mem": [] 
                 },
-                { "id":91 , "word":"金曜日" , "yomikata": [] "きんようび" ,"mean":"Thứ sáu" , "miss":true , "level":2,"x" },
-    { "id":92 , "word":"土曜日" , "yomikata": [] "どようび" ,"mean":"Thứ bảy" , "miss":true , "level":2,"x" },
-    { "id":93 , "word":"日曜日" , "yomikata": [] "にちようび" ,"mean":"Chủ Nhật" , "miss":true , "level":2,"x" },
-    { "id":94 , "word":"番号" , "yomikata": [] "ばんごう" ,"mean":"Số (điện thoại, phòng)" , "miss":true , "level":2,"x" },
-    { "id":95 , "word":"行く" , "yomikata": [] "いく" ,"mean":"Đi" , "miss":true , "level":1,"x" },
-    { "id":96 , "word":"帰る" , "yomikata": [] "帰る" ,"mean":"Về" , "miss":true , "level":2,"x" },
-    { "id":97 , "word":"来る" , "yomikata": [] "くる" ,"mean":"Đến" , "miss":true , "level":2,"x" },
-    { "id":98 , "word":"学校" , "yomikata": [] "がっこう" ,"mean":"Trường học" , "miss":true , "level":2,"x" },
-    { "id":99 , "word":"駅" , "yomikata": [] "えき" ,"mean":"Ga, nhà ga" , "miss":true , "level":2,"x" },
-    { "id":100 , "word":"飛行機" , "yomikata": [] "ひこうき" ,"mean":"Máy bay" , "miss":true , "level":4, "x" },
-    { "id":101 , "word":"船" , "yomikata": [] "ふね" ,"mean":"Thuyền, tàu bè" , "miss":true , "level":3, "x" },
-    { "id":102 , "word":"電車" , "yomikata": [] "でんしゃ" ,"mean":"Tàu điện" , "miss":true , "level":2,"x" },
-    { "id":103 , "word":"地下鉄" , "yomikata": [] "ちかてつ" ,"mean":"Tàu điện ngầm" , "miss":true , "level":2,"x" },
-    { "id":104 , "word":"新幹線" , "yomikata": [] "しんかんせん" ,"mean":"Tàu shinkansen" , "miss":true , "level":7, "x", "x" },
-    { "id":105 , "word":"歩いて" , "yomikata": [] "あるいて" ,"mean":"Đi bộ" , "miss":true , "level":2,"x" }
-                              
+                { 
+                    "id":2 , 
+                    "word":"土曜日" , 
+                    "yomikata": ["どようび"]  ,
+                    "mean":"Thứ bảy" , 
+                    "miss":true , 
+                    "level":2,
+                    "mem": [] 
+                },
+                { 
+                    "id":3 , 
+                    "word":"日曜日" , 
+                    "yomikata": ["にちようび"]  ,
+                    "mean":"Chủ Nhật" , 
+                    "miss":true , 
+                    "level":1,
+                    "mem": [] 
+                },
+                { 
+                    "id":4 , 
+                    "word":"番号" , 
+                    "yomikata": ["ばんごう"]  ,
+                    "mean":"Số (điện thoại, phòng)" , 
+                    "miss":true , 
+                    "level":3,
+                    "mem": [] 
+                },
+                { 
+                    "id":5 , 
+                    "word":"行く" , 
+                    "yomikata": ["いく"]  ,
+                    "mean":"Đi" , 
+                    "miss":true , 
+                    "level":1,
+                    "mem": [] 
+                },
+                { 
+                    "id":6 , 
+                    "word":"帰る" , 
+                    "yomikata": ["帰る"]  ,
+                    "mean":"Về" , 
+                    "miss":true , 
+                    "level":2,
+                    "mem": [] 
+                },
+                { 
+                    "id":7 , 
+                    "word":"来る" , 
+                    "yomikata": ["くる"]  ,
+                    "mean":"Đến" , 
+                    "miss":true , 
+                    "level":2,
+                    "mem": [] 
+                },
+                { 
+                    "id":8 , 
+                    "word":"学校" , 
+                    "yomikata": ["がっこう"]  ,
+                    "mean":"Trường học" , 
+                    "miss":true , 
+                    "level":3,
+                    "mem": [] 
+                },
+                { 
+                    "id":9 , 
+                    "word":"駅" , 
+                    "yomikata": ["えき"]  ,
+                    "mean":"Ga, nhà ga" , 
+                    "miss":true , 
+                    "level":2,
+                    "mem": [] 
+                },
+                { 
+                    "id":10 , 
+                    "word":"飛行機" , 
+                    "yomikata": ["ひこうき"]  ,
+                    "mean":"Máy bay" , 
+                    "miss":true , 
+                    "level":4, 
+                    "mem": [] 
+                },
+                { 
+                    "id":11 , 
+                    "word":"船" , 
+                    "yomikata": ["ふね"]  ,
+                    "mean":"Thuyền, tàu bè" , 
+                    "miss":true , 
+                    "level":3, 
+                    "mem": [] 
+                },
+                { 
+                    "id":12 , 
+                    "word":"電車" , 
+                    "yomikata": ["でんしゃ"]  ,
+                    "mean":"Tàu điện" , 
+                    "miss":true , 
+                    "level":2,
+                    "mem": [] 
+                },
+                { 
+                    "id":13 , 
+                    "word":"地下鉄" , 
+                    "yomikata": ["ちかてつ"]  ,
+                    "mean":"Tàu điện ngầm" , 
+                    "miss":true , 
+                    "level":2,
+                    "mem": [] 
+                },
+                { 
+                    "id":14 , 
+                    "word":"新幹線" , 
+                    "yomikata": ["しんかんせん"]  ,
+                    "mean":"Tàu shinkansen" , 
+                    "miss":true , 
+                    "level":4, 
+                    "mem": [] 
+                },
+                { 
+                    "id":15 , 
+                    "word":"歩いて" , 
+                    "yomikata": ["あるいて"] ,
+                    "mean":"Đi bộ" , 
+                    "miss":true , 
+                    "level":2,
+                    "mem": [] 
+                }
+                                        
             ]
         },
         {
             "id":8,
             "courseName":"動物",
             "listWord": [
-                {
-                    "id": 1,
-                    "word": "車",
-                    "yomikata": [] ["くるま","しゃ"],
-                    "mean": "",
-                    "miss": true,
-                    "level": ,
-                    "mems": [""]
+                
+                { 
+                    "id":1 , 
+                    "word":"人" , 
+                    "yomikata": ["ひと"]  ,
+                    "mean":"Người" , 
+                    "miss":true , 
+                    "level":2,
+                    "mem": [] 
                 },
-                { "id":106 , "word":"人" , "yomikata": [] "ひと" ,"mean":"Người" , "miss":true , "level":2,"x" },
-    { "id":107 , "word":"友達" , "yomikata": [] "ともだち" ,"mean":"Bạn, bạn bè" , "miss":true , "level":3, "x" },
-    { "id":108 , "word":"彼女" , "yomikata": [] "かのじょ" ,"mean":"Chị ấy, bạn gái" , "miss":true , "level":2,"x" },
-    { "id":109 , "word":"家族" , "yomikata": [] "かぞく" ,"mean":"Gia đình" , "miss":true , "level":3, "x" },
-    { "id":110 , "word":"一人で" , "yomikata": [] "ひとりで" ,"mean":"Một mình" , "miss":true , "level":2,"x" },
-    { "id":111 , "word":"先週" , "yomikata": [] "せんしゅう" ,"mean":"Tuần trước" , "miss":true , "level":2,"x" },
-    { "id":112 , "word":"今週" , "yomikata": [] "こんしゅう" ,"mean":"Tuần này" , "miss":true , "level":2,"x" },
-    { "id":113 , "word":"先月" , "yomikata": [] "せんげつ" ,"mean":"Tháng trước" , "miss":true , "level":2,"x" },
-    { "id":114 , "word":"今月" , "yomikata": [] "こんげつ" ,"mean":"Tháng này" , "miss":true , "level":2,"x" },
-    { "id":115 , "word":"来月" , "yomikata": [] "らいげつ" ,"mean":"Tháng sau" , "miss":true , "level":2,"x" },
-    { "id":116 , "word":"去年" , "yomikata": [] "きょねん" ,"mean":"Năm ngoái" , "miss":true , "level":3, "x" },
-    { "id":117 , "word":"今年" , "yomikata": [] "ことし" ,"mean":"Năm nay" , "miss":true , "level":3, "x" },
-    { "id":118 , "word":"来年" , "yomikata": [] "らいねん" ,"mean":"Năm sau" , "miss":true , "level":3, "x" },
-    { "id":119 , "word":"1日" , "yomikata": [] "ついたち" ,"mean":"Ngày mùng 1" , "miss":true , "level":4, "x" },
-    { "id":120 , "word":"誕生日" , "yomikata": [] "たんじょうび" ,"mean":"Ngày sinh nhật" , "miss":true , "level":4, "x" }
+                { 
+                    "id":2 , 
+                    "word":"友達" , 
+                    "yomikata": ["ともだち"]  ,
+                    "mean":"Bạn, bạn bè" , 
+                    "miss":true , 
+                    "level":3, 
+                    "mem": [] 
+                },
+                { 
+                    "id":3 , 
+                    "word":"彼女" , 
+                    "yomikata": ["かのじょ"]  ,
+                    "mean":"Chị ấy, bạn gái" , 
+                    "miss":true , 
+                    "level":2,
+                    "mem": [] 
+                },
+                { 
+                    "id":4 , 
+                    "word":"家族" , 
+                    "yomikata": ["かぞく"]  ,
+                    "mean":"Gia đình" , 
+                    "miss":true , 
+                    "level":3, 
+                    "mem": [] 
+                },
+                { 
+                    "id":5, 
+                    "word":"一人で" , 
+                    "yomikata": ["ひとりで"]  ,
+                    "mean":"Một mình" , 
+                    "miss":true , 
+                    "level":2,
+                    "mem": [] 
+                },
+                { 
+                    "id":6 , 
+                    "word":"先週" , 
+                    "yomikata": ["せんしゅう"]  ,
+                    "mean":"Tuần trước" , 
+                    "miss":true , 
+                    "level":2,
+                    "mem": [] 
+                },
+                { 
+                    "id":7 , 
+                    "word":"今週" , 
+                    "yomikata": ["こんしゅう"]  ,
+                    "mean":"Tuần này" , 
+                    "miss":true , 
+                    "level":2,
+                    "mem": [] 
+                },
+                { 
+                    "id":8 , 
+                    "word":"先月" , 
+                    "yomikata": ["せんげつ"]  ,
+                    "mean":"Tháng trước" , 
+                    "miss":true , 
+                    "level":2,
+                    "mem": [] 
+                },
+                { 
+                    "id":9 , 
+                    "word":"今月" , 
+                    "yomikata": ["こんげつ"]  ,
+                    "mean":"Tháng này" , 
+                    "miss":true , 
+                    "level":2,
+                    "mem": [] 
+                },
+                { 
+                    "id":10 , 
+                    "word":"来月" , 
+                    "yomikata": ["らいげつ"]  ,
+                    "mean":"Tháng sau" , 
+                    "miss":true , 
+                    "level":2,
+                    "mem": [] 
+                },
+                { 
+                    "id":11 , 
+                    "word":"去年" , 
+                    "yomikata": ["きょねん"]  ,
+                    "mean":"Năm ngoái" , 
+                    "miss":true , 
+                    "level":3, 
+                    "mem": [] 
+                },
+                { 
+                    "id":12 , 
+                    "word":"今年" , 
+                    "yomikata": ["ことし"]  ,
+                    "mean":"Năm nay" , 
+                    "miss":true , 
+                    "level":3, 
+                    "mem": [] 
+                },
+                { 
+                    "id":13 , 
+                    "word":"来年" , 
+                    "yomikata": ["らいねん"]  ,
+                    "mean":"Năm sau" , 
+                    "miss":true , 
+                    "level":3, 
+                    "mem": [] 
+                },
+                { 
+                    "id":14 , 
+                    "word":"1日" , 
+                    "yomikata": ["ついたち"]  ,
+                    "mean":"Ngày mùng 1" , 
+                    "miss":true , 
+                    "level":4, 
+                    "mem": [] 
+                },
+                { 
+                    "id":15 , 
+                    "word":"誕生日" , 
+                    "yomikata": ["たんじょうび"]  ,
+                    "mean":"Ngày sinh nhật" , 
+                    "miss":true , 
+                    "level":4, 
+                    "mem": [] 
+                }
                               
             ]
         }
