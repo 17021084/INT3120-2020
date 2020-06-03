@@ -133,7 +133,9 @@ module.exports = {
 
   // The test environment that will be used for testing
   testEnvironment: "node",
-
+  setupFiles: [
+    "./node_modules/react-native-gesture-handler/jestSetup.js"
+  ]
   // Options that will be passed to the testEnvironment
   // testEnvironmentOptions: {},
 

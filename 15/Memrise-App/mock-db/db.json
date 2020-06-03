@@ -1,6 +1,7 @@
 {
   "courses": [
     {
+      "id": 1,
       "courseName": "人間",
       "listWord": [
         {
@@ -133,10 +134,10 @@
           "miss": false,
           "level": 4
         }
-      ],
-      "id": 1
+      ]
     },
     {
+      "id": 2,
       "courseName": "勉強",
       "listWord": [
         {
@@ -229,8 +230,7 @@
           "miss": true,
           "level": 1
         }
-      ],
-      "id": 2
+      ]
     },
     {
       "id": 3,

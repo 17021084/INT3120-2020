@@ -21,7 +21,7 @@ export default function listWord({ navigation, route }) {
 
   useEffect(() => {
     const { wordId, id } = route.params; // gui nguen word id  
-    const queryString = `http://localhost:3000/courses/${id}`;
+    const queryString = `https://5ebc0433f2cfeb001697d562.mockapi.io/db/${id}`;
     axios
       .get(queryString)
       .then((res) => {
@@ -69,7 +69,7 @@ export default function listWord({ navigation, route }) {
         listWord: newListWord,
       };
     
-    const queryString = `http://localhost:3000/courses/${id}`;
+    const queryString = `https://5ebc0433f2cfeb001697d562.mockapi.io/db/${id}`;
     axios
       .put(queryString, putData)
       .then((res) => {

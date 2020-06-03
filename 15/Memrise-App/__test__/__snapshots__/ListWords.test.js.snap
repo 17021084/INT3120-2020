@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test ListWords Screen 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "stretch",
+      "backgroundColor": "#fff",
+      "flex": 1,
+      "justifyContent": "flex-start",
+      "paddingHorizontal": 20,
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../assets/flowergrow.gif",
+        }
+      }
+    />
+    <Image
+      source={
+        Object {
+          "testUri": "../../../assets/loading.gif",
+        }
+      }
+      style={
+        Object {
+          "height": 60,
+        }
+      }
+    />
+  </View>
+</View>
+`;

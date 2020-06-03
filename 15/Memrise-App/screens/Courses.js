@@ -12,7 +12,7 @@ export default function Courses({ navigation }) {
   const [courses, setCourses] = useState({});
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
-    const queryString = `http://localhost:3000/courses`;
+    const queryString = `https://5ebc0433f2cfeb001697d562.mockapi.io/db`;
     axios
       .get(queryString)
       .then((res) => {

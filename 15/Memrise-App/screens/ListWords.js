@@ -22,7 +22,7 @@ export default function ListWord({ navigation, route }) {
 
   const typingTimeOut = useRef(null);
   useEffect(() => {
-    const queryString = `http://localhost:3000/courses/${id}`;
+    const queryString = `https://5ebc0433f2cfeb001697d562.mockapi.io/db/${id}`;
     axios
       .get(queryString)
       .then((res) => {
